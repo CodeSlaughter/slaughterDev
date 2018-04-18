@@ -1,0 +1,14 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Portfolio app",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "author": "Jamie Slaughter",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}
