@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/style2.css">
+    <title>Slaughter Dev</title>
+</head>
+
+<body>
+    <header class="main-header developer">
+        <div class="primary-overlay developer">
+            <div class="showcase container center">
+                <div class="row">
+                    <div class="main text s12 white-text">
+                        <h1>Web Developer</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Intro -->
+    <section class="section section-intro">
+        <div class="container">
+            <div class="row">
+                <p class="flow-text intro">
+                        As a developer I am always learning new technologies and deepening my knowledge of Javascript. Most of my experience is with Javascript frameworks using Node.js on the backend and React, Angular or Vue on the front end. I have some experience with other languages such as PHP and Python and their accompanying frameworks.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section: Education -->
+    <section class="section section-education">
+        <div class="container">
+            <div class="row">
+                <h3>Education</h3>
+            </div>
+            <div class="divider"></div>
+            <div class="row">
+                <h4>Full Stack Academy of Code</h4>
+                <p class="flow-text">3 month intensive coding bootcamp focused on MERN stack.</p>
+            </div>
+            <div class="row">
+                <h4>Udacity: Intro to Programming Nanodegree</h4>
+                <p class="flow-text">Nanodegree focusing on programming fundamentals utilizing the Python programming language</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section: Projects -->
+    <section class="section section-projects">
+        <div class="container">
+            <div class="row">
+                <h3>Projects</h3>
+            </div>
+            <div class="divider"></div>
+            <div class="row">
+                <div class="col s12 m7">
+                    <h4>
+                        <a class="black-text" href="https://bear-a-hand.herokuapp.com/">Bear-A-Hand</a>
+                    </h4>
+                    <p>Mostly static site for non profit Bear-A-Hand</p>
+                    <p>This was a fairly simple site using node.js, express.js, and html. The limited backend functionality
+                        is for handling the contact form.</p>
+                </div>
+                <div class="col s12 m4 offset-m1">
+                        <img src="/images/bah.png"
+                        id="image1" alt="" class="responsive-img" style="margin-top: 30px">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s12 m7">
+                    <h4>
+                        <a class="black-text" href="https://blackwit.org/">BlackWit.org</a>
+                    </h4>
+                    <p>Mostly static site for my financial blog</p>
+                    <p>This site is using and hosted on the WordPress platform</p>
+                </div>
+                <div class="col s12 m4 offset-m1">
+                        <img src="/images/bwit.png" id="image2" alt="" class="responsive-img" style="margin-top: 30px">
+                </div>
+            </div>
+            <div class="row">
+                    <div class="col s12 m7">
+                        <h4>
+                            <a class="black-text" href="https://codeslaughter.github.io/">Slaughter Fitness</a>
+                        </h4>
+                        <p>Fitness Blog</p>
+                        <p>One of the first sites I ever created with HTML, CSS, Bootstrap and JQuery.</p>
+                    </div>
+                    <div class="col s12 m4 offset-m1">
+                            <img src="/images/sf.png" id="image3" alt="" class="responsive-img" style="margin-top: 30px">
+                    </div>
+                </div>
+                <div class="row">
+                        <div class="col s12 m7">
+                            <h4>
+                                <a class="black-text" href="https://daydreamer-fsa.herokuapp.com/">Daydreamer</a>
+                            </h4>
+                            <p>Group planning and Event Recommendation</p>
+                            <p>This is a Fullstack web application and capstone project for my bootcamp completion. It is running on node.js Express.js, React-Redux and a host of other npm modules. Users can sign in and create groups, and select interests. The app will compile the group's interests and call on the yelp and eventful API's to search local happenings/venus and recommend a group outing that will hopefully be enjoyable for all group members.</p>
+							<p>The app also has scheduling capablity thanks to Cronify which will let users authorize their calendars, and will search for free times across all group members making scheduling a breeze.</p>
+                        </div>
+                        <div class="col s12 m4 offset-m1">
+                            <img src="/images/daydreamer.png" id="image4" alt="" class="responsive-img" style="margin-top: 30px">
+                        </div>
+                    </div>
+        </div>
+    </section>
+
+
+    <div class="fixed-action-btn">
+        <a href="/" class="btn-floating btn-large red">
+            <i class="large material-icons">arrow_back</i>
+        </a>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <script>
+        $('.section').hide();
+        $(document).ready(function () {
+            setTimeout(function () {
+                $('.section').fadeIn();
+
+                var options = [
+      {selector: '#image1', offset: 300, callback: function(el) {
+        Materialize.fadeInImage($(el));
+      } },
+      {selector: '#image2', offset: 300, callback: function(el) {
+        Materialize.fadeInImage($(el));
+      } },
+      {selector: '#image3', offset: 300, callback: function(el) {
+        Materialize.fadeInImage($(el));
+      } },
+      {selector: '#image4', offset: 300, callback: function(el) {
+        Materialize.fadeInImage($(el));
+      } }
+    ];
+    Materialize.scrollFire(options);
+            }, 1000)
+            
+        })
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/style2.css">
+    <title>Slaughter Dev</title>
+</head>
+
+<body>
+    <header class="main-header package">
+        <div class="primary-overlay package">
+            <div class="showcase container center">
+                <div class="row">
+                    <div class="main text s12 white-text">
+                        <h1>Packaging Engineer</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Section: Education -->
+    <section class="section section-body">
+        <div class="container">
+            <div class="row">
+                <p class="flow-text intro">
+                    From the world’s largest cosmetics company to the fifth largest food and beverage company I have worked on a plethora of
+                    packaging components in some of the largest consumer product companies in the country. The majority of
+                    my career has been in the food industry working on household names such as Philadelphia Cream Cheese,
+                    Honey Bunches of Oats, and Nabisco branded products. I can confidently say a package that I have worked
+                    on has likely been in every home in America.
+                </p>
+                <h3>Education</h3>
+            </div>
+            <div class="divider"></div>
+            <div class="row">
+                <h4>Rutgers University: School of Engineering</h4>
+                <h5>B.S. Applied Sciences of Engineering with a focus in Packaging</h5>
+                <p class="flow-text">Related course work: Six Sigma Methodologies, Economic Principles and Problems, Packaging Machinery, Packaging
+                    Evaluation Methods, Thermodynamics, Distribution Packaging, Materials Processing I, Engineering Probability</p>
+                <div class="divider"></div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Section: Body -->
+    <section class="section section-body">
+        <div class="container">
+            <div id="exp1" class="row appear">
+                <h3>Experience</h3>
+                <h4>Edgewell Personal Care</h4>
+                <p>As a contract engineer for Edgewell Personal Care Corporation was involved in a number of cost improvement
+                    and business continuity initiatives in sun care division supporting national brands such as Hawaiian
+                    Tropic, and Banana Boat. Along with that, scoping of advanced technologies specifically in aerosols.
+                    </p>
+            </div>
+            <div id="exp2" class="row appear">
+                <h4>Kraft Foods / The Kraft Heinz Company</h4>
+                <p>As an Engineer at Kraft Foods working in the Cheese and Diary business unit, I was able to become inundated
+                    by and take advantage of all the educational resources available. I developed a strong understanding
+                    of injection molding, and in mold labeling while working on a beloved global cream cheese brand. Also,
+                    during my time there I was also able to dive deeper into the realm of food science while sharpening my
+                    food packaging skills. </p>
+            </div>
+            <div id="exp3" class="row appear">
+                <h4>Post Foods LLC</h4>
+                <p>Working in the entrepreneurial setting of Post Foods offered exposure to many fast paced merchandizing projects and an understanding of the trials of a small company defining itself. As an engineer in such circumstances one must learn to adapt quickly by learning new skills. A major takeaway from this experience has been to dive in and become an expert when one recognizes a gap is present. Other key responsibilities include AutoCad Engineer and merchandizing specialist working on displays and pallet mods. As the Post Foods packaging platform was mostly bag in box, sealing  and flexible packaging knowledge was a top priority to maintain product quality.</p>
+            </div>
+            <div id="exp4" class="row appear">
+                <h4>Kraft Foods Global (Now Mondelez International)</h4>
+                <p>Kraft Foods Global offered a deep dive into a food company with a very diverse packaging portfolio. A huge takeaway from this position was a thorough understanding of sealing technology. Nabisco and its many great snack brands utilize an array of flexible packaging leaving them vulnerable to improper sealing. To combat this, we were taught the science behind sealing technology and how to troubleshoot equipment on line. </p>
+            </div>
+            <div id="exp5" class="row appear">
+                <h4>Johnson and Johnson Consumer Product Companies</h4>
+                <p>If I had to sum up this experience it would all come down to pumps and shrink films. A global mouthwash brand had to swiftly eliminate PVC from its neckbands and I was at the helm to qualify and alternative. This huge project had everything from regulatory concerns, due to product containing alcohol and being exported globally, to material science (what happens to PVC on a molecular level that makes it behave the way it does?) . A great experience for a young engineer to gain business acumen on a global scale.</p>
+            </div>
+            <div id="exp6" class="row appear">
+                <h4>L'Oreal</h4>
+                <p>Packaging Specification Transcriber</p>
+            </div>
+        </div>
+    </section>
+    <div class="fixed-action-btn">
+        <a href="/" class="btn-floating btn-large red">
+            <i class="large material-icons">arrow_back</i>
+        </a>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <script>
+        $('.section').hide();
+        $(document).ready(function () {
+            setTimeout(function () {
+                $('.section').fadeIn();
+
+                var options = [
+      {selector: '#exp1', offset: 100, callback: function(el) {
+        Materialize.fadeInImage($(el));
+      } },
+      {selector: '#exp2', offset: 100, callback: function(el) {
+        Materialize.fadeInImage($(el));
+      } },
+      {selector: '#exp3', offset: 100, callback: function(el) {
+        Materialize.fadeInImage($(el));
+      } },
+      {selector: '#exp4', offset: 100, callback: function(el) {
+        Materialize.fadeInImage($(el));
+      } },
+      {selector: '#exp5', offset: 100, callback: function(el) {
+        Materialize.fadeInImage($(el));
+      } },
+      {selector: '#exp6', offset: 100, callback: function(el) {
+        Materialize.fadeInImage($(el));
+      } }
+    ];
+    Materialize.scrollFire(options);
+            }, 1000)
+        })
+    </script>
+</body>
+
+</html>
